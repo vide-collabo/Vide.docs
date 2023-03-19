@@ -1,1 +1,13 @@
 /** Custom styles */
+
+h2 .anchor,
+h3 .anchor,
+h4 .anchor,
+h5 .anchor {
+  display: none;
+}
+
+// [data-dark-mode] body {
+//   background: $body-bg-dark;
+//   color: $body-color-dark;
+// }

@@ -3,7 +3,7 @@
 ## Homepage
 title = "Vide"
 titleSeparator = "-"
-titleAddition = "UIs So Simple"
+titleAddition = "UI so Simple!"
 description = "Vide is an approach to easily building high-level UIs targeting various platforms and technologies."
 
 ## Documentation
@@ -37,7 +37,7 @@ schemaImageHeight = 640
 schemaTwitter = "https://twitter.com/schlenkr"
 schemaLinkedIn = ""
 schemaGitHub = "https://github.com/ronaldschlenker/vide"
-schemaSection = "blog"
+schemaSection = "Docs"
 
 ## Sitelinks Search Box
 siteLinksSearchBox = false
@@ -47,7 +47,7 @@ themeColor = "#fff"
 
 # Images - Temporarily left in place for backward compatibility
 quality = 85
-bgColor = "#fff"
+bgColor = "#222"
 landscapePhotoWidths = [900, 800, 700, 600, 500]
 portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
@@ -68,18 +68,18 @@ fillImage = "1270x740 Center"      # normalize image size
 footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\">Netlify</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
 
 # Feed
-copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
+copyRight = "Copyright (c) Ronald Schlenker"
 
 # Alert
 alert = false
 alertDismissable = true
 # alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\" target=\"_blank\" rel=\"noopener\">Check out Doks v0.2</a>"
-alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Check out Doks v0.2</a>"
+alertText = "Hello World!"
 
 # Edit Page
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
 repoHost = "GitHub"
-docsRepo = "https://github.com/h-enk/doks"
+docsRepo = "https://github.com/ronaldschlenker/vide"
 docsRepoBranch = "master"
 docsRepoSubPath = ""
 editPage = false
@@ -110,4 +110,4 @@ scrollSpy = false        # experimental; needs Bootstrap >= 5.2.0-beta1
 [menu]
 [menu.section]
 auto = true
-collapsibleSidebar = true
+collapsibleSidebar = false
