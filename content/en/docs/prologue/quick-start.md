@@ -14,7 +14,7 @@ toc: true
 ---
 
 ## Requirements
-
+<!--
 - [Git](https://git-scm.com/) — latest source release
 - [Node.js](https://nodejs.org/) — latest LTS version or newer
 
@@ -37,7 +37,7 @@ Doks is available as a child theme and a starter theme.
 - [Easily update npm packages]({{< relref "how-to-update" >}}) — __including__ [Doks](https://www.npmjs.com/package/@hyas/doks)
 
 ```bash
-git clone https://github.com/h-enk/doks-child-theme.git my-doks-site
+git clone https://github.com/ronaldschlenker/vide-child-theme.git my-doks-site
 ```
 
 #### Starter theme
@@ -47,7 +47,7 @@ git clone https://github.com/h-enk/doks-child-theme.git my-doks-site
 - [Easily update npm packages]({{< relref "how-to-update" >}})
 
 ```bash
-git clone https://github.com/h-enk/doks.git my-doks-site
+git clone https://github.com/ronaldschlenker/vide.git my-doks-site
 ```
 
 {{< details "Help me choose" >}}
@@ -76,4 +76,4 @@ Doks will start the Hugo development webserver accessible by default at `http://
 
 ## Other commands
 
-Doks comes with commands for common tasks. [Commands →]({{< relref "commands" >}})
+Doks comes with commands for common tasks. [Commands →]({{< relref "commands" >}}) -->
