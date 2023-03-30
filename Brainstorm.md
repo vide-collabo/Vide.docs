@@ -1,0 +1,49 @@
+* Intro
+    Allgemein: Die Idee von Vide
+    Idee aus DSP
+    Similar experience for many tasks, domains and platforms
+    Writing WebApps: Fable
+    Writing Desktop/Mobile: MAUI
+    Writing Desktop/Mobile: Avalonia
+    DSP: LocSta
+* Technical Stuff
+    Vidde.Common
+
+Vide Fable
+---
+
+* Intro
+  * Fable
+  * Beta phase
+
+* Step-by-Step
+  * Prerequisites: npm / dotnet 6 SDK
+      a) Use dotnet new template
+      b)
+        Create a new Fable Project of your own choice
+        Include Lib via NuGet
+  * Komponenten
+      * mit / ohne Children
+      * Als HTML-Element (Builder) oder Funktion
+
+
+
+
+IDEEN
+---
+
+* Doesn't use or need TypeScript, because it uses F#
+* Where can I get Support
+* Fable / Femto
+* Router
+
+
+Main Screen
+---
+Mehr in den Vordergrund stellen, was(!) man tun kann, z.B.
+  -> Write Web-Apps
+    Write WebApps with Fable
+  -> Desktop and Mobile
+    ...
+  -> DSP (Digital Signal Processing)
+    ...
