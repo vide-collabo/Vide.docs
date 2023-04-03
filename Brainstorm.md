@@ -22,6 +22,7 @@ Vide Fable
       b)
         Create a new Fable Project of your own choice
         Include Lib via NuGet
+  * Hosting
   * Komponenten
       * mit / ohne Children
       * Als HTML-Element (Builder) oder Funktion
@@ -36,6 +37,17 @@ IDEEN
 * Where can I get Support
 * Fable / Femto
 * Router
+* You are always "in the language"
+* Try Vide online
+
+* Operators (+=, :=,. etc)
+* Docu: Das geht so nicht - Trigger erklären!
+        let! currentItems = Mutable.ofValue (ResizeArray())
+        let addItem item = currentItems.value.Add(item)
+        let removeItem item = currentItems.value.Remove(item) |> ignore
+* Access HTMLElement from builder wirh let! or via map/iter
+
+
 
 
 Main Screen
