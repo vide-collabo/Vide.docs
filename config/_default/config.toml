@@ -1,4 +1,4 @@
-baseurl = "https://doks.netlify.app/"
+baseurl = "https://vide-dev.io/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
