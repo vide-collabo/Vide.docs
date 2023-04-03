@@ -34,7 +34,20 @@ Make sure you have the correct versions of the dotnet SDK and Node.js installed,
 dotnet new -i Vide.Fable.Templates
 ```
 
-This will install the "Vide for Fable" templates that can be used for scaffolding new projects. You can can check the templates available by executing `dotnet new --list`.
+{{< alert icon="⚠️" >}}
+If you have a dotnet SDK version >= 7, you might be prompted with a message stating that `dotnet new -i` is deprecated. This is ok as long as the template is installed correctly. Otherwise, use the recommended way in the message for installing new templates.
+{{< /alert >}}
+
+This will install the "Vide for Fable" templates that can be used for scaffolding new projects. You can can check the templates available by executing `dotnet new --list`:
+
+```bash
+Template Name                         Short Name           Language    Tags
+------------------------------------- -------------------  ----------  -----------------
+ASP.NET Core Empty                    web                  [C#],F#     Web/Empty
+...
+Vide for Fable (minimal) with Vite    vide.fable.minimal   F#          web/f#/fable/vide
+...
+```
 
 Now it's time to create a new "Vide for Fable" project:
 

@@ -27,7 +27,8 @@ Vide Fable
       * mit / ohne Children
       * Als HTML-Element (Builder) oder Funktion
 
-
+* CSS
+  * Fable scheint Probleme zu haben, wenn man CSS-Modules importiert.
 
 
 IDEEN
@@ -59,3 +60,10 @@ Mehr in den Vordergrund stellen, was(!) man tun kann, z.B.
     ...
   -> DSP (Digital Signal Processing)
     ...
+
+Misc
+---
+* CSS imports (rel zum File)
+    importSideEffects("./Demo.scss")
+* Links (abs.)
+    p { img.src("./src/components/logo.png").width("150px") }
