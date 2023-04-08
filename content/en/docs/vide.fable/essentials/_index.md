@@ -1,10 +1,10 @@
 ---
-title : "Step by Step"
-description: "Step by Step"
+title : "Essentials"
+description: "Essentials"
 lead: ""
 date: 2020-10-06T08:48:45+00:00
 lastmod: 2020-10-06T08:48:45+00:00
 draft: false
 images: []
-weight: 1000
+weight: 300
 ---

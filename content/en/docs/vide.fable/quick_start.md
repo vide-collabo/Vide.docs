@@ -40,13 +40,10 @@ If you have a dotnet SDK version >= 7, you might be prompted with a message stat
 
 This will install the "Vide for Fable" templates that can be used for scaffolding new projects. You can can check the templates available by executing `dotnet new --list`:
 
-```bash
-Template Name                         Short Name           Language    Tags
-------------------------------------- -------------------  ----------  -----------------
-ASP.NET Core Empty                    web                  [C#],F#     Web/Empty
-...
-Vide for Fable (minimal) with Vite    vide.fable.minimal   F#          web/f#/fable/vide
-...
+```plaintext
+Template Name                        Short Name           Language
+-----------------------------------  -------------------  ----------
+Vide for Fable (minimal) with Vite   vide.fable.minimal   F#
 ```
 
 Now it's time to create a new "Vide for Fable" project:
@@ -63,9 +60,12 @@ npm i
 npm start
 ```
 
-This will install all npm dependencies and also restore the dotnet tools, which is the Fable compiler for this template. After `npm start`, the Fable compiler and the Vite dev server whatch the files changed on disk and do the hard work in the background for you!
+This will install all npm dependencies and also restore the dotnet tools, which is the Fable compiler for this template. After `npm start`, the Fable compiler and the Vite dev server whatch the files changed on disk and do the hard work in the background for you.
 
-You should now have your first "Vide for Fable" project running! When you are ready to ship your app to production, run the following:
+The app can be viewed in you browser on
+[http://localhost:3000/](http://localhost:3000/)
+
+Now have your first "Vide for Fable" project running! When you are ready to ship your app to production, run the following:
 
 ```bash
 npm run build
