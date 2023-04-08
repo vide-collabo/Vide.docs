@@ -67,3 +67,9 @@ Misc
     importSideEffects("./Demo.scss")
 * Links (abs.)
     p { img.src("./src/components/logo.png").width("150px") }
+* app.OnEval
+* Referenz auf Fable mit
+  * Was ist F# - damit sollte man sich etwas auskennen
+  * Gilt auch für Fable
+
+* importSideEffects("./Demo.scss")

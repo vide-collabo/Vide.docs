@@ -38,7 +38,7 @@ dotnet new -i Vide.Fable.Templates
 If you have a dotnet SDK version >= 7, you might be prompted with a message stating that `dotnet new -i` is deprecated. This is ok as long as the template is installed correctly. Otherwise, use the recommended way in the message for installing new templates.
 {{< /alert >}}
 
-This will install the "Vide for Fable" templates that can be used for scaffolding new projects. You can can check the templates available by executing `dotnet new --list`:
+This will install the *Vide for Fable* templates that can be used for scaffolding new projects. You can can check the templates available by executing `dotnet new --list`:
 
 ```plaintext
 Template Name                        Short Name           Language
@@ -46,7 +46,7 @@ Template Name                        Short Name           Language
 Vide for Fable (minimal) with Vite   vide.fable.minimal   F#
 ```
 
-Now it's time to create a new "Vide for Fable" project:
+Now it's time to create a new *Vide for Fable* project:
 
 ```bash
 dotnet new vide.fable.minimal -n HelloVideFable
@@ -65,7 +65,7 @@ This will install all npm dependencies and also restore the dotnet tools, which 
 The app can be viewed in you browser on
 [http://localhost:3000/](http://localhost:3000/)
 
-Now have your first "Vide for Fable" project running! When you are ready to ship your app to production, run the following:
+Now have your first *Vide for Fable* project running! When you are ready to ship your app to production, run the following:
 
 ```bash
 npm run build
@@ -77,4 +77,4 @@ As your project grows in code size and npm/dotnet dependencies, you should have 
 
 ## Alternative: Include Vide.Fable in your Existing Project
 
-Instead of creating a new new "Vide for Fable" app, you can simply add the [Vide.Fable](https://www.nuget.org/packages/Vide.Fable) NuGet package to an existing Fable project and start using it!
+Instead of creating a new new *Vide for Fable*" app, you can simply add the [Vide.Fable](https://www.nuget.org/packages/Vide.Fable) NuGet package to an existing Fable project and start using it!
