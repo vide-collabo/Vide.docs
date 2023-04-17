@@ -56,11 +56,6 @@ let counter elementName = vide {
 }
 ```
 
-{{< alert icon="👉" >}}
-An F# side note: The **elementName** is constrained to be of type **string** via the **%s** type annotation at the first usage in the interpolated string. It could have been left unconstrained or directly at the function parameter.
-{{< /alert >}}
-
-
 The component can be used like any other HTML element in the final view:
 
 ```fsharp
@@ -69,3 +64,7 @@ vide {
     counter "dogs"
 }
 ```
+
+{{< alert icon="👉" >}}
+Instead of just passing strings, numbers or in general "pure data" to components, you can also pass other components (or component-constructing functions) into components that then act as partial view or template.
+{{< /alert >}}

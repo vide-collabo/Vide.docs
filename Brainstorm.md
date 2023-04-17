@@ -66,5 +66,6 @@ Misc
 
 * importSideEffects("./Demo.scss")
 * Optimizations / Lifecycle
+  * Under the hood, all property setters and event handler registrators use "TODO" under the hood. This means that these actions are only carried out when the component (and therefor the underlying DOM element) is created.
 * Anders als bei anderen UI-Frameworks: State kann "überall" sein
-*
+* Templates + Slots
