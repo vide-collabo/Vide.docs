@@ -35,6 +35,8 @@ An application instance needs a container to render the root component. It expec
 let host = document.getElementById("app")
 ```
 
+It is also possible to mount more than 1 Vide app on a page.
+
 ## The View Component
 
 The object we are passing into `createAndStart` is in fact a component. Every app requires a component that can contain other components as its children.

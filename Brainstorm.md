@@ -15,18 +15,9 @@ Vide Fable
 * Intro
   * Fable
   * Beta phase
-
-* Step-by-Step
-  * Prerequisites: npm / dotnet 6 SDK
-      a) Use dotnet new template
-      b)
-        Create a new Fable Project of your own choice
-        Include Lib via NuGet
-  * Hosting
-  * Komponenten
-      * mit / ohne Children
-      * Als HTML-Element (Builder) oder Funktion
-
+* Komponenten
+    * mit / ohne Children
+    * Als HTML-Element (Builder) oder Funktion
 * CSS
   * Fable scheint Probleme zu haben, wenn man CSS-Modules importiert.
 
@@ -60,6 +51,7 @@ Mehr in den Vordergrund stellen, was(!) man tun kann, z.B.
     ...
   -> DSP (Digital Signal Processing)
     ...
+  -> Codebeispiel mit if/for
 
 Misc
 ---
@@ -73,3 +65,6 @@ Misc
   * Gilt auch für Fable
 
 * importSideEffects("./Demo.scss")
+* Optimizations / Lifecycle
+* Anders als bei anderen UI-Frameworks: State kann "überall" sein
+*

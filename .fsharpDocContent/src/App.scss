@@ -1,0 +1,27 @@
+@mixin centerGrid() {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.centerGrid {
+  @include centerGrid();
+}
+
+#app {
+  @include centerGrid();
+  height: 70%;
+}
+
+#app > * {
+  margin: auto;
+}
+
+#app img {
+  margin-bottom: 20px;
+}
+
+#app button {
+  margin: 10px;
+}

@@ -34,7 +34,7 @@ Make sure you have the correct versions of the dotnet SDK and Node.js installed,
 dotnet new -i Vide.Fable.Templates
 ```
 
-{{< alert icon="⚠️" >}}
+{{< alert icon="👉" >}}
 If you have a dotnet SDK version >= 7, you might be prompted with a message stating that `dotnet new -i` is deprecated. This is ok as long as the template is installed correctly. Otherwise, use the recommended way in the message for installing new templates.
 {{< /alert >}}
 
