@@ -14,7 +14,7 @@ toc: true
 ---
 
 {{< alert icon="🚨" >}}
-There are only 2 valid `else`-expressions: `Vide.elseForget` and `Vide.elsePreserve`. Never do anything "else" - even if it might compile.
+**Vide for Fable** and this documentation are still pre-release!
 {{< /alert >}}
 
 
