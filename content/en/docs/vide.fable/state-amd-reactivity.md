@@ -58,7 +58,9 @@ button.onclick(fun _ -> count.Value <- count.Value + 1) {
 
 The click handler increments the counter's `Value`. As an alternative to an assignment, `counter.Set(count.Value + 1)` can be used, too.
 
+{{< alert icon="⚡" >}}
 As for **reactivity**, there is nothing more to do. The view will automatically re-evaluate itself synchronousely.
+{{< /alert >}}
 
 ## Visualizing Click Count
 
@@ -69,8 +71,7 @@ vide {
     let! count = Vide.ofMutable 0
 
     p {
-        button
-            .onclick(fun _ -> count.Value <- count.Value + 1) {
+        button.onclick(fun _ -> count.Value <- count.Value + 1) {
             "Click me!"
         }
     }

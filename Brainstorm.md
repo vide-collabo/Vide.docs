@@ -69,3 +69,35 @@ Misc
   * Under the hood, all property setters and event handler registrators use "TODO" under the hood. This means that these actions are only carried out when the component (and therefor the underlying DOM element) is created.
 * Anders als bei anderen UI-Frameworks: State kann "überall" sein
 * Templates + Slots
+  * See "Components" and invent a meaningful example for that.
+* In-Depth: Wie funktioniert Vide?
+* if-else
+        "if-else cannot work like that"
+        ////// TODO: That should not be used at all? And: That this seems to work
+        ////// is only an edge case, because state has same type
+        ////if count.Value = 5 then
+        ////    div.class'("the-message") {
+        ////        $"You have the right to defend yourself!"
+        ////    }
+        ////else
+        ////    p { $"not yet..." }
+* Extending NodeBuilder with extensions:
+    [<Extension>]
+    type BuilderExtensions =
+
+        /// Sets an arbitrary attribute's value on every eval cycle.
+        [<Extension>]
+        static member attr<'nb,'e,'n
+                when 'nb :> NodeBuilder<'e,'n,FableContext>
+                and 'e :> HTMLElement
+                and 'n :> Node>
+            (
+                this: 'nb,
+                key: string,
+                value: string
+            ) =
+            this.OnEval(fun x -> x.node.setAttribute(key, value))
+* Advanced: Explain the "app"
+  * manually evaluate
+  * have a look at the "state"
+  * ref: "The view will automatically re-evaluate itself synchronousely."

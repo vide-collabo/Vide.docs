@@ -10,8 +10,7 @@ module A =
             div {
                 let! count = Vide.ofMutable 0
 
-                button
-                    .onclick(fun _ -> count.Value <- count.Value + 1) {
+                button.onclick(fun _ -> count.Value <- count.Value + 1) {
                     "Count cats!"
                 }
                 $"cats: {count.Value}"
@@ -21,8 +20,7 @@ module A =
             div {
                 let! count = Vide.ofMutable 0
 
-                button
-                    .onclick(fun _ -> count.Value <- count.Value + 1) {
+                button.onclick(fun _ -> count.Value <- count.Value + 1) {
                     "Count dogs!"
                 }
                 $"dogs: {count.Value}"
@@ -34,8 +32,7 @@ module B =
         div {
             let! count = Vide.ofMutable 0
 
-            button
-                .onclick(fun _ -> count.Value <- count.Value + 1) {
+            button.onclick(fun _ -> count.Value <- count.Value + 1) {
                 $"Count {elementName}!"
             }
             $"{elementName}: {count.Value}"

@@ -6,5 +6,7 @@ open Vide
 
 importSideEffects("./App.scss")
 
-let host = document.getElementById("app")
-let app = VideApp.Fable.createAndStart host Components.B.view (fun _ _ _ -> ())
+VideApp.Fable.createAndStart
+    (document.getElementById("app"))
+    Conditions.B.view
+|> ignore

@@ -8,8 +8,7 @@ let view =
         let! count = Vide.ofMutable 0
 
         p {
-            button
-                .onclick(fun _ -> count.Value <- count.Value + 1) {
+            button.onclick(fun _ -> count.Value <- count.Value + 1) {
                 "Click me!"
             }
         }

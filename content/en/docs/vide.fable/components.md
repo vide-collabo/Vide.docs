@@ -6,7 +6,7 @@ date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
 draft: false
 images: []
-weight: 500
+weight: 900
 toc: true
 ---
 
@@ -18,8 +18,7 @@ vide {
     div {
         let! count = Vide.ofMutable 0
 
-        button
-            .onclick(fun _ -> count.Value <- count.Value + 1) {
+        button.onclick(fun _ -> count.Value <- count.Value + 1) {
             "Count cats!"
         }
         $"cats: {count.Value}"
@@ -29,8 +28,7 @@ vide {
     div {
         let! count = Vide.ofMutable 0
 
-        button
-            .onclick(fun _ -> count.Value <- count.Value + 1) {
+        button.onclick(fun _ -> count.Value <- count.Value + 1) {
             "Count dogs!"
         }
         $"dogs: {count.Value}"
@@ -47,8 +45,7 @@ let counter elementName = vide {
     div {
         let! count = Vide.ofMutable 0
 
-        button
-            .onclick(fun _ -> count.Value <- count.Value + 1) {
+        button.onclick(fun _ -> count.Value <- count.Value + 1) {
             $"Count %s{elementName}!"
         }
         $"{elementName}: {count.Value}"
@@ -65,6 +62,10 @@ vide {
 }
 ```
 
-{{< alert icon="👉" >}}
+## Templates and Slots
+
 Instead of just passing strings, numbers or in general "pure data" to components, you can also pass other components (or component-constructing functions) into components that then act as partial view or template.
+
+{{< alert icon="👉" >}}
+Hey - are **you** reading this? You can improve this Vide docu you are just reading my forking it and provide a good example for templates and slots :)
 {{< /alert >}}
