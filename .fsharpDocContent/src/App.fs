@@ -8,5 +8,5 @@ importSideEffects("./App.scss")
 
 VideApp.Fable.createAndStart
     (document.getElementById("app"))
-    Conditions.B.view
+    Conditions.D.view
 |> ignore

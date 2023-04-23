@@ -10,16 +10,20 @@ weight: 500
 toc: true
 ---
 
-Let's extend the "Cats and Dogs" counter again: The user's patience shall be rewarded when he counts many cats and dogs by a well-intentioned message:
+Let's extend the counter again: The user's patience shall be rewarded when he counts many items by a well-intentioned message.
 
 ```fsharp
-let! count = Vide.ofMutable 0
+vide {
+    let! count = Vide.ofMutable 0
+    button.onclick(fun _ -> count.Value <- count.Value + 1) {
+        $"Count = {count.Value}"
+    }
 
-button.onclick(fun _ -> count.Value <- count.Value + 1) {
-    $"Counting {elementName}: ({count.Value})"
+    // TODO: Display the message on every 5th count
+    p {
+        "...will you go on?"
+    }
 }
-
-(* ... *)
 ```
 
 ## Using 'hidden'
@@ -28,7 +32,7 @@ A simple, yet working solution for that is to hide the message conditionally by 
 
 ```fsharp
 p.hidden(count.Value % 5 <> 0) {
-    "...keep counting!"
+    "...will you go on?"
 }
 ```
 
@@ -40,21 +44,53 @@ These issues are adressed by using the language-level construct `if` and `else` 
 
 ```fsharp
 if count.Value % 5 = 0 then
-    p { "...keep counting!" }
+    p {
+        "...will you go on?"
+    }
 else
     Vide.elseForget
 ```
 
 In this case, the `p` element in only inserted in the DOM when the condition is met, and removed otherwise.
 
-## else: Preserve or Forget
+## else: What to do?
 
-The else-branch used here (`Vide.elsePreserve`) cannot be omitted and this, has to be specified by the developer. To understand that,
+The `else`-branch used here with `Vide.elsePreserve` cannot be omitted, because Vide needs to know what to do with state that was eventually built up in the `if` branch. To get a better understanding of what that means, we extend our program by introducing `state in the if-branch`: The user shall be able to check a box wether he/she is ""...willing to go on":
 
+## else: Forget
 
-It is a choice of 2 behaviours: When the else-branch has to be taken,
+```fsharp
+if count.Value % 5 = 0 then
+    p {
+        "...will you go on?"
 
-* is mandatory
+        let! isWillingToGoOn = Vide.ofMutable false
+        input
+            .type'("checkbox")
+            .checked'(isWillingToGoOn.Value)
+            .oninput(fun x -> isWillingToGoOn.Value <- x.node.``checked``)
+    }
+else
+    Vide.elseForget
+```
 
+Now try this: Count to a multiple of 5 and check the checkbox. Count to the next multiple: The checkbox is again unchecked! The reason for this behaviour is caused by the `Vide.elseForget` in the `else`-branch. It tells Vide to throw away all the state built up during it's previous `if`-branch evaluation. When it then comes to a subsequent `if`-branch evaluation, the content inside the `if`-branch and it's local state start from scratch with their initial values.
 
-<!-- TODO. Docu: The state can get lost because they are not compatible -->
+## else: Preserve
+
+There is another statement useful for `else`-branches: `Vide.elsePreserve`, which can be seen as the opposite of `Vide.elseForget`: It preserves the state of previous `if`-evaluations until the next `if`-evaluation, thus continueing the program in the `if`:
+
+```fsharp
+if count.Value % 5 = 0 then
+    (* ... *)
+else
+    Vide.elsePreserve
+```
+
+## else: Don't Mix Views
+
+TL;DR: Using `if-else` to switch between 2 view is not recommended. Although this might compile (the types of state used in the `if` and it's corresponding `else`-branch have to be identical), it can have a negative impact on performance, and it might lead to "remaining" attribute values on some elements. So please follow this rule:
+
+{{< alert icon="🚨" >}}
+There are only 2 valid `else`-expressions: `Vide.elseForget` and `Vide.elsePreserve`. Never do anything "else" - even if it might compile.
+{{< /alert >}}
