@@ -10,7 +10,7 @@ description = "Vide is an approach to easily building high-level UIs targeting v
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+images = ["vide.png"]
 ogLocale = "en_US"
 domainTLD = "vide-dev.io"
 titleHome = "Vide UIs"
@@ -28,10 +28,10 @@ schemaAuthorTwitter = "https://twitter.com/schlenkr"
 schemaAuthorLinkedIn = ""
 schemaAuthorGitHub = "https://github.com/ronaldschlenker"
 schemaLocale = "en-US"
-schemaLogo = "logo-doks.png"
+schemaLogo = "logo-vide.png"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
-schemaImage = "doks.png"
+schemaImage = "vide.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
 schemaTwitter = "https://twitter.com/schlenkr"

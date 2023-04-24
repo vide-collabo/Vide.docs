@@ -51,7 +51,7 @@ let rootComponent =
     vide {
         div.class'("main-view") {
             p {
-                img.src("https://vide-dev.io/logo-doks.svg").width("150px")
+                img.src("https://vide-dev.io/logo-vide.svg").width("150px")
             }
             hr
             "The whole Vide world"
