@@ -29,7 +29,7 @@ module B =
                     "...will you go on?"
                 }
             else
-                Vide.elseForget
+                elseForget
         }
 
 module C =
@@ -51,7 +51,7 @@ module C =
                         .oninput(fun x -> isWillingToGoOn.Value <- x.node.``checked``)
                 }
             else
-                Vide.elseForget
+                elseForget
         }
 
 module D =
@@ -73,5 +73,5 @@ module D =
                         .oninput(fun x -> isWillingToGoOn.Value <- x.node.``checked``)
                 }
             else
-                Vide.elsePreserve
+                elsePreserve
         }

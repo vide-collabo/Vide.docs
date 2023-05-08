@@ -101,3 +101,10 @@ Misc
   * manually evaluate
   * have a look at the "state"
   * ref: "The view will automatically re-evaluate itself synchronousely."
+* value restriction issues
+* Binding state to input:
+      input
+          .type'("checkbox")
+          .checked'(item.isDone)
+          .oninput(fun x -> item.isDone <- x.node.``checked``)
+      input.bind(item.isDone)

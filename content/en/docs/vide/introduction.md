@@ -18,7 +18,7 @@ This idea is so basic that it supports various use cases that somehow deal with 
 
 ## UI Development with Fable
 
-Wanna use the fresh approach of writing web apps with F#, Fable and Vide? Then go directly [here](/docs/vide.fable/getting_started)!
+Wanna use the fresh approach of writing web apps with F#, Fable and Vide? Then go directly [here](/docs/vide.fable/introduction)!
 
 ## Background
 

@@ -48,14 +48,14 @@ if count.Value % 5 = 0 then
         "...will you go on?"
     }
 else
-    Vide.elseForget
+    elseForget
 ```
 
 In this case, the `p` element in only inserted in the DOM when the condition is met, and removed otherwise.
 
 ## else: What to do?
 
-The `else`-branch used here with `Vide.elsePreserve` cannot be omitted, because Vide needs to know what to do with state that was eventually built up in the `if` branch. To get a better understanding of what that means, we extend our program by introducing `state in the if-branch`: The user shall be able to check a box wether he/she is ""...willing to go on":
+The `else`-branch used here with `elsePreserve` cannot be omitted, because Vide needs to know what to do with state that was eventually built up in the `if` branch. To get a better understanding of what that means, we extend our program by introducing `state in the if-branch`: The user shall be able to check a box wether he/she is ""...willing to go on":
 
 ## else: Forget
 
@@ -71,20 +71,20 @@ if count.Value % 5 = 0 then
             .oninput(fun x -> isWillingToGoOn.Value <- x.node.``checked``)
     }
 else
-    Vide.elseForget
+    elseForget
 ```
 
-Now try this: Count to a multiple of 5 and check the checkbox. Count to the next multiple: The checkbox is again unchecked! The reason for this behaviour is caused by the `Vide.elseForget` in the `else`-branch. It tells Vide to throw away all the state built up during it's previous `if`-branch evaluation. When it then comes to a subsequent `if`-branch evaluation, the content inside the `if`-branch and it's local state start from scratch with their initial values.
+Now try this: Count to a multiple of 5 and check the checkbox. Count to the next multiple: The checkbox is again unchecked! The reason for this behaviour is caused by the `elseForget` in the `else`-branch. It tells Vide to throw away all the state built up during it's previous `if`-branch evaluation. When it then comes to a subsequent `if`-branch evaluation, the content inside the `if`-branch and it's local state start from scratch with their initial values.
 
 ## else: Preserve
 
-There is another statement useful for `else`-branches: `Vide.elsePreserve`, which can be seen as the opposite of `Vide.elseForget`: It preserves the state of previous `if`-evaluations until the next `if`-evaluation, thus continueing the program in the `if`:
+There is another statement useful for `else`-branches: `elsePreserve`, which can be seen as the opposite of `elseForget`: It preserves the state of previous `if`-evaluations until the next `if`-evaluation, thus continueing the program in the `if`:
 
 ```fsharp
 if count.Value % 5 = 0 then
     (* ... *)
 else
-    Vide.elsePreserve
+    elsePreserve
 ```
 
 ## else: Don't Mix Views
@@ -92,5 +92,5 @@ else
 TL;DR: Using `if-else` to switch between 2 view is not recommended. Although this might compile (the types of state used in the `if` and it's corresponding `else`-branch have to be identical), it can have a negative impact on performance, and it might lead to "remaining" attribute values on some elements. So please follow this rule:
 
 {{< alert icon="🚨" >}}
-There are only 2 valid `else`-expressions: `Vide.elseForget` and `Vide.elsePreserve`. Never do anything "else" - even if it might compile.
+There are only 2 valid `else`-expressions: `elseForget` and `elsePreserve`. Never do anything "else" - even if it might compile.
 {{< /alert >}}
