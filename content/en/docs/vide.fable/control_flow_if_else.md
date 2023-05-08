@@ -1,6 +1,6 @@
 ---
-title: "Conditions (if-else)"
-description: "Conditions (if-else)"
+title: "Control Flow: if-else"
+description: "Control Flow: if-else"
 lead: ""
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
