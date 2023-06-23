@@ -61,8 +61,8 @@ vide {
 
 ## Templates and Slots
 
-Instead of just passing strings, numbers or in general "pure data" to components, you can also pass other components (or component-constructing functions) into components that then act as partial view or template.
+Instead of just passing strings, numbers or in general "pure data" to components, you can also pass other components (or component-constructing functions) into components that then act as partial views or templates.
 
 {{< alert icon="👉" >}}
-Hey - are **you** reading this? You can improve this Vide docu you are just reading my forking it and provide a good example for templates and slots :)
+Hey - are **you** reading this? You can improve this Vide doc you are just reading by forking it and provide a good example for templates and slots :)
 {{< /alert >}}

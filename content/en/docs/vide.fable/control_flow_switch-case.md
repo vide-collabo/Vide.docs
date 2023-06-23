@@ -29,18 +29,18 @@ match currentPage.Value with
 | Pages.Movie id -> Pages.Movie.View id
 ```
 
-Like in `if/else` expressions, every branch in match-expressions has to be of the "same type". This is important to understand, and it might not be intuitively clear what "same type" means: It is the type `Vide<'value, 'state, 'context>` where value is the component's actual return `'value` (usually `unit`), but `'state` is something that is propably not the same type when partial views differ.
+Like in `if/else` expressions, every branch in match-expressions has to be of the "same type". This is important to understand, and it might not be intuitively clear what "same type" means: It is the type `Vide<'value, 'state, 'context>` where value is the component's actual return `'value` (usually `unit`), but `'state` is something that is probably not the same type when partial views differ.
 
 Additionally, there is one question that arises:
 
-> What to do with the state of a partial view when it's currently not needed? Should it be preserved and used eventually in the future, or shall it be forgotten so that the partial is always "resetted" when it's requested in the future?
+> What to do with the state of a partial view when it's currently not needed? Should it be preserved and used eventually in the future, or shall it be forgotten so that the partial is always "reset" when it's requested in the future?
 
 Vide provides a `switch / case` concept that allows for:
 
 * cases that show only when there's no previous case that was shown,
 * cases that always show (when their condition is met; independent of previous cases),
 * default case
-* specify if a case shall preserve it's state or reset it on show
+* specify if a case shall preserve its state or reset it on show
 
 Example:
 
@@ -49,7 +49,7 @@ vide {
     let! (viewNr : int) = chooseView
 
     // There are 3 views. The 2nd view's state is cleared on every show.
-    // All other view retain their state.
+    // All other views retain their state.
 
     switch (fun x -> x = viewNr)
     |> case 0 componentWithBooleanState

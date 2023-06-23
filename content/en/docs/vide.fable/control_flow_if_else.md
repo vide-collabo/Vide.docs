@@ -38,7 +38,7 @@ p.hidden(count.Value % 5 <> 0) {
 
 ## Using 'if'
 
-While using `hidden` is valid for such simple use cases, it a disadvantage: The hidden element(s) sit always in the DOM, which can lead to performance issues, layout problems, eager loading issues, etc. Working around those issues can lead to new issues, or makes writing and understanding the code harder.
+While using `hidden` is valid for such simple use cases, there's a disadvantage: The hidden element(s) sit always in the DOM, which can lead to performance issues, layout problems, eager loading issues, etc. Working around those issues can lead to new issues, or makes writing and understanding the code harder.
 
 These issues are adressed by using the language-level construct `if` and `else` that actually work on DOM-level:
 
@@ -55,7 +55,7 @@ In this case, the `p` element in only inserted in the DOM when the condition is 
 
 ## else: What to do?
 
-The `else`-branch used here with `elsePreserve` cannot be omitted, because Vide needs to know what to do with state that was eventually built up in the `if` branch. To get a better understanding of what that means, we extend our program by introducing `state in the if-branch`: The user shall be able to check a box wether he/she is ""...willing to go on":
+The `else`-branch used here with `elseForget` cannot be omitted, because Vide needs to know what to do with state that was eventually built up in the `if` branch. To get a better understanding of what that means, we extend our program by introducing `state in the if-branch`: The user shall be able to check a box wether he/she is "...willing to go on":
 
 ## else: Forget
 
@@ -74,11 +74,11 @@ else
     elseForget
 ```
 
-Now try this: Count to a multiple of 5 and check the checkbox. Count to the next multiple: The checkbox is again unchecked! The reason for this behaviour is caused by the `elseForget` in the `else`-branch. It tells Vide to throw away all the state built up during it's previous `if`-branch evaluation. When it then comes to a subsequent `if`-branch evaluation, the content inside the `if`-branch and it's local state start from scratch with their initial values.
+Now try this: Count to a multiple of 5 and check the checkbox. Count to the next multiple: The checkbox is again unchecked! The reason for this behaviour is caused by the `elseForget` in the `else`-branch. It tells Vide to throw away all the state built up during its previous `if`-branch evaluation. When it then comes to a subsequent `if`-branch evaluation, the content inside the `if`-branch and its local state start from scratch with their initial values.
 
 ## else: Preserve
 
-There is another statement useful for `else`-branches: `elsePreserve`, which can be seen as the opposite of `elseForget`: It preserves the state of previous `if`-evaluations until the next `if`-evaluation, thus continueing the program in the `if`:
+There is another statement useful for `else`-branches: `elsePreserve`, which can be seen as the opposite of `elseForget`: It preserves the state of previous `if`-evaluations until the next `if`-evaluation, thus continuing the program in the `if`:
 
 ```fsharp
 if count.Value % 5 = 0 then
@@ -89,7 +89,7 @@ else
 
 ## else: Don't Mix Views
 
-TL;DR: Using `if-else` to switch between 2 view is not recommended. Although this might compile (the types of state used in the `if` and it's corresponding `else`-branch have to be identical), it can have a negative impact on performance, and it might lead to "remaining" attribute values on some elements. So please follow this rule:
+TL;DR: Using `if-else` to switch between 2 view is not recommended. Although this might compile (the types of state used in the `if` and its corresponding `else`-branch have to be identical), it can have a negative impact on performance, and it might lead to "remaining" attribute values on some elements. So please follow this rule:
 
 {{< alert icon="🚨" >}}
 There are only 2 valid `else`-expressions: `elseForget` and `elsePreserve`. Never do anything "else" - even if it might compile.
