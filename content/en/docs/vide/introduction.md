@@ -14,7 +14,7 @@ Vide is a principle following an idea:
 
 > Composing state-aware functions as easily as if they were just pure functions!
 
-This idea is so basic that it supports various use cases that somehow deal with "changing values over time". Propably, you came here because you are interested in programming UIs. This can be done with Vide, using one of the implementations described here like:
+This idea is so basic that it supports various use cases that somehow deal with "changing values over time". Probably, you came here because you are interested in programming UIs. This can be done with Vide, using one of the implementations described here like:
 
 ## UI Development with Fable
 

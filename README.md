@@ -1,1 +1,1 @@
-Documentation for [https://github.com/RonaldSchlenker/Vide](Vide).
+Documentation for [Vide](https://github.com/RonaldSchlenker/Vide).

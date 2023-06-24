@@ -12,7 +12,7 @@ toc: true
 
 ## Prerequisites
 
-Vide for Fable relies on the F# to JavaScript compiler [Fable](https://fable.io/), which required both `dotnet` and `node / npm` in this
+Vide for Fable relies on the F# to JavaScript compiler [Fable](https://fable.io/), which requires both `dotnet` and `node / npm`. You need these versions:
 
 * Node 18 + npm 8
 * dotnet SDK 6
@@ -52,7 +52,7 @@ Now it's time to create a new *Vide for Fable* project:
 dotnet new vide.fable.minimal -n HelloVideFable
 ```
 
-Not it's time to build and run the project:
+Now it's time to build and run the project:
 
 ```bash
 cd HelloVideFable
@@ -60,7 +60,7 @@ npm i
 npm start
 ```
 
-This will install all npm dependencies and also restore the dotnet tools, which is the Fable compiler for this template. After `npm start`, the Fable compiler and the Vite dev server whatch the files changed on disk and do the hard work in the background for you.
+This will install all npm dependencies and also restore the dotnet tools, which is the Fable compiler for this template. After `npm start`, the Fable compiler and the Vite dev server watch the files changed on disk and do the hard work in the background for you.
 
 The app can be viewed in you browser on
 [http://localhost:3000/](http://localhost:3000/)
