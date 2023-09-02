@@ -31,7 +31,7 @@ In this section we will introduce how to scaffold a Vide SPA (Single Page Applic
 Make sure you have the correct versions of the dotnet SDK and Node.js installed, then run the following command in your command line:
 
 ```bash
-dotnet new -i Vide.Fable.Templates
+dotnet new -i Vide.UI.Fable.Templates
 ```
 
 {{< alert icon="👉" >}}
@@ -43,13 +43,13 @@ This will install the *Vide for Fable* templates that can be used for scaffoldin
 ```plaintext
 Template Name                        Short Name           Language
 -----------------------------------  -------------------  ----------
-Vide for Fable (minimal) with Vite   vide.fable.minimal   F#
+Vide for Fable (minimal) with Vite   vide.ui.fable.minimal   F#
 ```
 
 Now it's time to create a new *Vide for Fable* project:
 
 ```bash
-dotnet new vide.fable.minimal -n HelloVideFable
+dotnet new vide.ui.fable.minimal -n HelloVideFable
 ```
 
 Now it's time to build and run the project:
@@ -75,6 +75,6 @@ npm run build
 As your project grows in code size and npm/dotnet dependencies, you should have a look at [Femto](https://github.com/Zaid-Ajaj/Femto), which is a dotnet CLI tool for managing npm packages used by Fable bindings.
 {{< /alert >}}
 
-## Alternative: Include Vide.Fable in your Existing Project
+## Alternative: Include Vide.UI.Fable in your Existing Project
 
-Instead of creating a new new *Vide for Fable*" app, you can simply add the [Vide.Fable](https://www.nuget.org/packages/Vide.Fable) NuGet package to an existing Fable project and start using it!
+Instead of creating a new new *Vide for Fable*" app, you can simply add the [Vide.UI.Fable](https://www.nuget.org/packages/Vide.UI.Fable) NuGet package to an existing Fable project and start using it!
