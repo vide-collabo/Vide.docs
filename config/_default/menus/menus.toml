@@ -37,7 +37,7 @@
   name = "Fable"
   weight = 30
   identifier = "get-started"
-  url = "/docs/vide.fable/introduction/"
+  url = "/docs/vide.ui.fable/introduction/"
 
 [[social]]
   name = "GitHub"
