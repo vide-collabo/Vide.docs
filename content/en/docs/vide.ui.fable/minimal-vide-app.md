@@ -12,7 +12,7 @@ toc: true
 
 ## The Application Instance
 
-Every Vide application starts by creating a new application instance with the `VideApp.Fable.createAndStart` function:
+Every Vide application starts by creating a new application instance with the `VideApp`:
 
 ```fsharp
 open Browser
@@ -20,7 +20,7 @@ open Vide
 
 let rootComponent = (* ... *)
 let host = (* ... *)
-let app = VideApp.Fable.createAndStart host rootComponent
+let app = VideApp.ForHost(host).CreateAndStartWithUntypedState(rootComponent)
 ```
 
 ## Mounting the App
