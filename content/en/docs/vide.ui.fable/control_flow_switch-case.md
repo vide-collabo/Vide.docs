@@ -59,4 +59,4 @@ vide {
 }
 ```
 
-More examples are [here](https://github.com/RonaldSchlenker/Vide/blob/dc655b160283f45eb63d7f5505cbdfbd1c8b215d/Vide.Fable/src/DevApp/src/UseCases/ControlFlow.fs#L90).
+More examples are [here](https://github.com/RonaldSchlenker/Vide/blob/dc655b160283f45eb63d7f5505cbdfbd1c8b215d/Vide.UI.Fable/src/DevApp/src/UseCases/ControlFlow.fs#L90).
