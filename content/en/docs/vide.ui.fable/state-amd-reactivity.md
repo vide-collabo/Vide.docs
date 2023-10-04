@@ -25,12 +25,12 @@ vide {
 
 ## Declaring State
 
-Now we need a value that stores the click count. In Vide, `Vide.ofMutable value` is used to declare state:
+Now we need a value that stores the click count. In Vide, `ofMutable { value }` is used to declare state:
 
 
 ```fsharp
 vide {
-    let! count = Vide.ofMutable 0
+    let! count = ofMutable {0}
     (* ... *)
 }
 ```
@@ -66,7 +66,7 @@ The click count can now be visualized using `counter.Value` in an interpolated s
 
 ```fsharp
 vide {
-    let! count = Vide.ofMutable 0
+    let! count = ofMutable {0}
 
     p {
         button.onclick(fun _ -> count.Value <- count.Value + 1) {

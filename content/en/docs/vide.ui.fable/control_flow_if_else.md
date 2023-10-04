@@ -14,7 +14,7 @@ Let's extend the counter again: The user's patience shall be rewarded when he co
 
 ```fsharp
 vide {
-    let! count = Vide.ofMutable 0
+    let! count = ofMutable {0}
     button.onclick(fun _ -> count.Value <- count.Value + 1) {
         $"Count = {count.Value}"
     }
@@ -64,7 +64,7 @@ if count.Value % 5 = 0 then
     p {
         "...will you go on?"
 
-        let! isWillingToGoOn = Vide.ofMutable false
+        let! isWillingToGoOn = ofMutable {false}
         input
             .type'("checkbox")
             .checked'(isWillingToGoOn.Value)

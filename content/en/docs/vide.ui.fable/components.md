@@ -13,7 +13,7 @@ As an extension to the previous counter, cats 🐈 and dogs 🐕 shall be counte
 vide {
     // cat counter
     div {
-        let! count = Vide.ofMutable 0
+        let! count = ofMutable {0}
 
         button.onclick(fun _ -> count.Value <- count.Value + 1) {
             "Count cats!"
@@ -23,7 +23,7 @@ vide {
 
     // dog counter
     div {
-        let! count = Vide.ofMutable 0
+        let! count = ofMutable {0}
 
         button.onclick(fun _ -> count.Value <- count.Value + 1) {
             "Count dogs!"
@@ -40,7 +40,7 @@ While this works, it's obvious that the counter code was copied and is now - apa
 ```fsharp
 let counter elementName = vide {
     div {
-        let! count = Vide.ofMutable 0
+        let! count = ofMutable {0}
 
         button.onclick(fun _ -> count.Value <- count.Value + 1) {
             $"Count %s{elementName}!"
