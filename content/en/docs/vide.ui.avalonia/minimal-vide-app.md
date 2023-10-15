@@ -1,9 +1,15 @@
 ---
 title: "A Minimal Vide App"
+description: "Setup a minimal Vide app for Avalonia."
+images: []
 weight: 300
+toc: true
 ---
 
-## The Application Instance
+TODO
+
+
+<!-- ## The Application Instance
 
 Every Vide application starts by creating a new application instance with the `VideApp`:
 
@@ -70,4 +76,4 @@ Empty elements (like `hr`) need no closing tags.
 
 ### Text
 
-It is also possible to just yield a string, like `The whole Vide world`. When strings are yielded, they are interpreted as raw strings not parsed as HTML.
+It is also possible to just yield a string, like `The whole Vide world`. When strings are yielded, they are interpreted as raw strings not parsed as HTML. -->

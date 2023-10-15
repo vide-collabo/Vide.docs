@@ -1,5 +1,6 @@
 ---
-title : "Vide for Fable"
+title : "Vide for Avalonia"
 description: "Write Vide app using Fable compiler."
-weight: 200
+images: []
+weight: 500
 ---

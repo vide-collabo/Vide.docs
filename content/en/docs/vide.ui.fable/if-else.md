@@ -1,13 +1,6 @@
 ---
-title: "Control Flow: if-else"
-description: "Control Flow: if-else"
-lead: ""
-date: 2020-10-13T15:21:01+02:00
-lastmod: 2020-10-13T15:21:01+02:00
-draft: false
-images: []
+title: "if else"
 weight: 500
-toc: true
 ---
 
 Let's extend the counter again: The user's patience shall be rewarded when he counts many items by a well-intentioned message.

@@ -1,11 +1,6 @@
 ---
 title: "State and Reactivity"
-description: "State and Reactivity"
-lead: ""
-draft: false
-images: []
 weight: 400
-toc: true
 ---
 
 ## A Simple Counter

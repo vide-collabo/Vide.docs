@@ -1,11 +1,6 @@
 ---
 title: "Control Flow: switch-case"
-description: "Control Flow: switch-case"
-lead: ""
-draft: false
-images: []
 weight: 600
-toc: true
 ---
 
 {{< alert icon="🚧" >}}

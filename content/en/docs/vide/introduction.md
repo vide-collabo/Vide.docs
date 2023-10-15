@@ -1,11 +1,6 @@
 ---
 title: "Introduction"
 description: "TODO"
-lead: ""
-date: 2020-10-06T08:48:57+00:00
-lastmod: 2020-10-06T08:48:57+00:00
-draft: false
-images: []
 weight: 1
 toc: true
 ---
@@ -18,7 +13,7 @@ This idea is so basic that it supports various use cases that somehow deal with 
 
 ## UI Development with Fable
 
-Wanna use the fresh approach of writing web apps with F#, Fable and Vide? Then go directly [here](/docs/vide.ui.fable/introduction)!
+Wanna use the fresh approach of writing web apps with F#, Fable and Vide? Then go directly [here](/docs/vide.ui.fable/getting-started)!
 
 ## Background
 

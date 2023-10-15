@@ -1,10 +1,6 @@
 ---
 title: "Components"
-description: "Components"
-lead: ""
-images: []
 weight: 900
-toc: true
 ---
 
 As an extension to the previous counter, cats 🐈 and dogs 🐕 shall be counted. Here is a first approach:

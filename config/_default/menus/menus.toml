@@ -30,14 +30,14 @@
 
 [[main]]
   name = "Docs"
-  url = "/docs/vide/introduction/"
+  url = "/docs/vide/getting-started/"
   weight = 10
 
 [[main]]
   name = "Fable"
   weight = 30
   identifier = "get-started"
-  url = "/docs/vide.ui.fable/introduction/"
+  url = "/docs/vide.ui.fable/getting-started/"
 
 [[social]]
   name = "GitHub"
