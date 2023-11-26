@@ -54,4 +54,4 @@ vide {
 }
 ```
 
-More examples are [here](https://github.com/vide-collabo/Vide/blob/main/Vide.UI/Vide.UI.Fable/src/DevApp/src/UseCases/ControlFlow.fs).
+More examples are [here](https://github.com/vide-collabo/Vide/blob/main/Vide.UI/Vide.UI.Fable/src/DevApp/src/UseCases/ControlFlow.fs#L90).
