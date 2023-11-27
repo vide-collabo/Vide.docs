@@ -55,7 +55,7 @@ npm i
 npm dev
 ```
 
-This will install all npm dependencies and also restore the dotnet tools, which is the Fable compiler for this template. After `npm dev`, the Fable compiler and the Vite dev server watch the files changed on disk and do the hard work in the background for you.
+This will install all npm dependencies and also restore the dotnet tools, which is the Fable compiler for this template. After `npm run dev`, the Fable compiler and the Vite dev server watch the files changed on disk and do the hard work in the background for you.
 
 The app can be viewed in you browser on
 [http://localhost:3000/](http://localhost:3000/)
