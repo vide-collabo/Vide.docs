@@ -1,5 +1,5 @@
 ---
-title: "Control Flow: switch-case"
+title: "Control Flow: pattern matchinig"
 weight: 600
 ---
 
@@ -7,7 +7,7 @@ weight: 600
 This page is a draft / WIP.
 {{< /alert >}}
 
-Please have a look at [this GitHub issue](https://github.com/RonaldSchlenker/Vide/issues/4) that discusses `match` expressions and the alternative provided in Vide.
+Please have a look at [this GitHub issue](https://github.com/vide-collabo/vide/issues/4) that discusses `match` expressions and the alternative provided in Vide.
 
 Consider this example:
 

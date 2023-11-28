@@ -17,6 +17,6 @@ toc: true
 
 Send `Ronald` a message:
 
-- [Vide Discussions](https://github.com/ronaldschlenker/vide/discussions)
-- [Vide Docs Repo](https://github.com/ronaldschlenker/vide.docs)
+- [Vide Discussions](https://github.com/vide-collabo/vide/discussions)
+- [Vide Docs Repo](https://github.com/vide-collabo/vide.docs)
 - [Twitter](https://twitter.com/schlenkr)

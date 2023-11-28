@@ -7,8 +7,8 @@
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}vide.ui.fable/getting-started/" role="button">{{ i18n "get-started" }}</a>
-      <p class="meta">Open-source at <a href="https://github.com/ronaldschlenker/vide">GitHub</a></p>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}vide/introduction" role="button">{{ i18n "get-started" }}</a>
+      <p class="meta">Open-source at <a href="https://github.com/vide-collabo">GitHub</a></p>
     </div>
   </div>
 </section>
@@ -41,14 +41,14 @@
           <h2 class="h4">Web Development</h2>
           <p>
             <i>Vide for Fable</i> builds upon <a href="https://fable.io/">Fable</a> F# to JavaScript compiler,
-            and a prototype for investigating the use of <a href="https://github.com/RonaldSchlenker/Vide/tree/main/Vide.WebSharper">Vide for WebSharper</a>.
+            and a prototype for investigating the use of <a href="https://github.com/vide-collabo/vide/tree/main/Vide.WebSharper">Vide for WebSharper</a>.
           </p>
         </div>
 
         <div class="col-lg-5">
           <h2 class="h4">Desktop / Mobile</h2>
           <p>
-            There is a <a href="https://github.com/RonaldSchlenker/Vide/tree/main/Vide.Maui">running prototype for MAUI</a>,
+            There is a <a href="https://github.com/vide-collabo/vide/tree/main/Vide.Maui">running prototype for MAUI</a>,
             and plans to provide a Vide API for Avalonia, Uno, and (maybe) WPF.
           </p>
         </div>

@@ -26,7 +26,7 @@ schemaName = "Vide"
 schemaAuthor = "Ronald Schlenker"
 schemaAuthorTwitter = "https://twitter.com/schlenkr"
 schemaAuthorLinkedIn = ""
-schemaAuthorGitHub = "https://github.com/ronaldschlenker"
+schemaAuthorGitHub = "https://github.com/schlenkr"
 schemaLocale = "en-US"
 schemaLogo = "logo-vide.png"
 schemaLogoWidth = 512
@@ -36,7 +36,7 @@ schemaImageWidth = 1280
 schemaImageHeight = 640
 schemaTwitter = "https://twitter.com/schlenkr"
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/ronaldschlenker/vide"
+schemaGitHub = "https://github.com/vide-collabo/vide"
 schemaSection = "Docs"
 
 ## Sitelinks Search Box
@@ -79,7 +79,7 @@ alertText = "Hello World!"
 # Edit Page
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
 repoHost = "GitHub"
-docsRepo = "https://github.com/ronaldschlenker/vide"
+docsRepo = "https://github.com/vide-collabo/vide"
 docsRepoBranch = "master"
 docsRepoSubPath = ""
 editPage = false

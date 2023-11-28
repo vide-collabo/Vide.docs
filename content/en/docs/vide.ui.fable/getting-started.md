@@ -52,7 +52,7 @@ Now it's time to build and run the project:
 ```bash
 cd HelloVideFable
 npm i
-npm dev
+npm run dev
 ```
 
 This will install all npm dependencies and also restore the dotnet tools, which is the Fable compiler for this template. After `npm run dev`, the Fable compiler and the Vite dev server watch the files changed on disk and do the hard work in the background for you.
