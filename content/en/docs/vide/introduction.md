@@ -201,7 +201,7 @@ There's a [sample app](https://github.com/vide-collabo/fiddles-n-showcase/blob/m
 
 ## Tech Background
 
-The basic idea of Vide is derived from [Digital Signal Processing with F#](https://github.com/vide-collabo/Videapplied_fsharp_challenge/blob/master/docs/index.md), which was @SchlenkR's submission to the [F# Applied Challenge](https://sergeytihon.com/2019/05/31/f-weekly-22-2019-winners-of-applied-f-challenge/). If you are interested in the core concept of how Vide is working, this might be a good starting point.
+The basic idea of Vide is derived from [Digital Signal Processing with F#](https://github.com/schlenkr/applied_fsharp_challenge/blob/master/docs/index.md), which was @SchlenkR's submission to the [F# Applied Challenge](https://sergeytihon.com/2019/05/31/f-weekly-22-2019-winners-of-applied-f-challenge/). If you are interested in the core concept of how Vide is working, this might be a good starting point.
 
 Also, you can have a look at [LocSta](https://github.com/fsprojects/LocSta/blob/master/README.md), which is an experimental F# library for describing signal flows using the Vide principle.
 
